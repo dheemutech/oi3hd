@@ -73,9 +73,8 @@ body {
   justify-content: center;
   width: 100%;
   height: 50px;
-  background-color: #ffffff;
-  /* border-right: 1px solid #e2e2e2; */
-  border-bottom: 3px solid #e2e2e2;
+  border-bottom: 1px solid #333333;
+  background-color: #D6DBDF;
 }
 
 .bottom-block {

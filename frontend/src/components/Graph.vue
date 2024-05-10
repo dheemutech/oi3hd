@@ -84,7 +84,7 @@ window.onresize = () => {
 function graphUpdate() {
     const url = "http://" + ip_port.value + "/get_graph";
     console.log("graphUpdate", url);
-    info_window_str.value = "Loading from server...";
+    info_window_str.value = "Loading...";
     var is_init = false;
     axios
         .post(url, {
@@ -133,7 +133,7 @@ function graphUpdate() {
             }, 10);
         })
         .catch(function (error) {
-            info_window_str.value = "Error in get_graph";
+            info_window_str.value = "Error 404";
             console.log("error in graphUpdate");
             console.log(error);
         });
@@ -352,7 +352,7 @@ function clickNode(node) {
     float: right;
     /* width: 85%; */
     flex-grow: 1;
-    background-color: #fff;
+    background-color: #F4F4F4;
     border: 0px;
 }
 
@@ -362,7 +362,7 @@ function clickNode(node) {
     right: 10px;
     height: auto;
     max-height: 50vh;
-    background-color: #fff;
+    background-color: #F4F4F4;
     padding: 3px;
     overflow-y: auto;
 }
@@ -373,7 +373,7 @@ function clickNode(node) {
     left: 40%;
     height: auto;
     width: 20%;
-    background-color: #fff;
+    background-color: #F4F4F4;
     padding: 5px;
     overflow-y: auto;
 }
@@ -382,11 +382,11 @@ function clickNode(node) {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #fff;
+    background-color: #F4F4F4;
 }
 
 .float-node-info-item {
     padding: 3px;
-    color: #000;
+    color: #fff;
 }
 </style>

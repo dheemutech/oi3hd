@@ -4,25 +4,25 @@
 
     </div>
     <div class="header_button">
-        |
+        <span style="color: #333333;"> | </span>
         <span class="bold-and-stylish">Model : </span>
         <select v-model="select_model_id">
             <option v-for="model_id in avaliable_model_ids" :value="model_id">{{ model_id }}</option>
         </select>
-        <span> | </span>
+        <span style="color: #333333;"> | </span>
         <span class="bold-and-stylish">Hardware: </span>
         <select v-model="select_hardware">
             <option v-for="hardware in avaliable_hardwares" :value="hardware">{{ hardware }}</option>
         </select>
-        <span> | </span>
+        <span style="color: #333333;"> | </span>
         <span class="bold-and-stylish">Server: </span>
         <select v-model="ip_port">
             <option value="api.llm-viewer.com:5000">api.llm-viewer.com</option>
             <option value="127.0.0.1:5000">127.0.0.1</option>
         </select>
-        <span> | </span>
+        <span style="color: #333333;"> | </span>
         <span class="hover-bold" @click="is_show_help = !is_show_help">Help</span>
-        <span> | </span>
+        <span style="color: #333333;"> | </span>
         <a href="https://github.com/hahnyuan/LLM-Viewer" target="_blank" class="hover-bold">Github</a>
     </div>
     <div v-if="is_show_help" class="float-info-window">
@@ -125,13 +125,13 @@ watch(ip_port, (n) => {
 
 .bold-and-stylish {
     font-weight: bold;
-    color: #000000;
+    color: #333333;
     font-size: 16px;
     margin-right: 5px;
 }
 
 .hover-bold {
-    color: black;
+    color: #333333;
     transition: font-weight 0.3s;
 }
 
@@ -152,6 +152,7 @@ select {
 }
 
 .float-info-window {
+    color: #333333;
     position: absolute;
     top: 60px;
     left: 75%;
@@ -174,7 +175,7 @@ select {
 
 div {
     margin: 5px 0;
-    color: #4a4a4a;
+    color: #D6DBDF;
 }
 
 a {
