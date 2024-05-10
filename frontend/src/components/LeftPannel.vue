@@ -26,8 +26,7 @@ onMounted(() => {
     align-items: left;
     width: 20%;
     height: 100%;
-    background-color: #f0f0f0;
-    border: 3px solid #e2e2e2;
+    background-color: #ffffff;
     overflow-y: auto;
     margin-bottom: 10px;
 }
